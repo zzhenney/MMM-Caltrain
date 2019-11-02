@@ -8,42 +8,64 @@
 Module.register("MMM-Caltrain", {
 
     defaults: {
-        southbound: true,
-        northbound: true,
-        twelveHour: true,
-        minutes: false,
+        stop_codes: [
+            northbound_id = null,
+            southbound_id = null
+        ],
+        timeFormat: config.timeFormat,
+        depatureTime: false,
         station: null,
-        api_key: "796681ed-86f6-4a65-8ca3-0a0d284109a2"
+        url: "http://api.511.org/transit/StopMonitoring?",
+        api_key: null
     },
 
-    requiresVersion: "2.1.0",
-
+    //requiresVersion: "2.1.0",
+    
     start: function() {
-        this.getDepartureTimes(this.config.api_key)
-        //set interval for update
+        if(!this.config.api_key) {
+            Log.log("no api key found!")
+        }
+        
+        this.info = this.getDepartureTimes()
+        //update departure times
+        var self = this
+        setInterval(()=>{
+            self.getDepartureTimes()}, 60000)
     },
 
+    /*
     getScripts: function() {
         //add any scripts
-        return null
+       //return null
     },
 
     getStyles: function() {
         //return css files
     },
+    */
 
     getDom: function() {
         var wrapper = document.createElement("div");
-        wrapper.innerHTML = "caltrain times";
+        wrapper.innerHTML = this.station_info;
         return wrapper;
     },
 
-    getDepartureTimes: function(api_key) {
-        this.sendSocketNotification("DEPARTURE_TIMES", this.config)
+    getHeader: function() {
+        //return this.station
+        return "Caltrain Departures"
+    },
+
+
+    
+
+    getDepartureTimes: function() {
+        console.log(this.config)
+        this.sendSocketNotification("DEPARTURE_REQUEST", this.config)
     },
 
     socketNotificationReceived: function(notification, payload) {
-        if(notification == "DEPARTURE_TIMES") {
+        if(notification == "DEPARTURE_INFO") {
+            console.log("returned payload" + JSON.stringify(payload))
             this.station_info = payload
             this.updateDom()
         }    
