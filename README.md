@@ -6,7 +6,7 @@ The `Caltrain` module provides estimated times of departure (etd) for the select
 1. Navigate to the modules folder in your Magic Mirror project
 1. Clone the Caltrain module by running `git clone https://github.com/zzhenney/MMM-Caltrain`
 2. Run `npm install`
-3. Update your Magic Mirror config.js file to include the following (at minimum):
+3. Update your Magic Mirror config.js file to include the following:
 ```javascript
 {
   module: "MMM-Caltrain",
