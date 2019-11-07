@@ -19,10 +19,10 @@ Example: User wants only southbound times at 22nd Street Station
   disabled: false,
   config: {
     station_id: [
-      southbound_id = "70022
+      southbound_id = "70022"
 
     ],
-    api_key: "766666ef-8687-4a65-8ca3-0a0d777107a2",
+    api_key: "7y66r6ef-8687-4a65-8ca3-0a0d777107a2",
     countdown: true
     
   }
