@@ -28,7 +28,7 @@ The `Caltrain` module provides estimated times of departure (etd) for the select
 ## Station IDs
 
 | Station Name | Northbound ID | Southbound ID |
-| --- | --- | --- |
+| :--- | :---: | :---: |
 | 22nd Street | 70021 | 70022 | 
 | Atherton | 70151 | 70152 | 
 | Bayshore | 70031 | 70032 | 
