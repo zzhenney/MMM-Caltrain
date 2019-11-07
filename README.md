@@ -27,42 +27,42 @@ The `Caltrain` module provides estimated times of departure (etd) for the select
 ```
 ## Station IDs
 
-| Station Name | ID (Northbound, Southbound) |
-| --- | --- |
-| 22nd Street Caltrain | [70021, 70022] |
-| Atherton Caltrain | [70151, 70152] |
-| Bayshore Caltrain | [70031, 70032] |
-| Belmont Caltrain | [70121, 70122] |
-| Blossom Hill Caltrain | [70291, 70292] |
-| Broadway Caltrain | [70071, 70072] |
-| Burlingame Caltrain | [70081, 70082] |
-| California Ave Caltrain | [70191, 70192] |
-| Capitol Caltrain | [70281, 70282] |
-| College Park Caltrain | [70251, 70252] |
-| Gilroy Caltrain | [70321, 70322] |
-| Hayward Park Caltrain | [70101, 70102] |
-| Hillsdale Caltrain | [70111, 70112] |
-| Lawrence Caltrain | [70231, 70232] |
-| Menlo Park Caltrain | [70161, 70162] |
-| Millbrae Caltrain | [70061, 70062] |
-| Morgan Hill Caltrain | [70301, 70302] |
-| Mountain View Caltrain | [70211, 70212] |
-| Palo Alto Caltrain | [70171, 70172] |
-| Redwood City Caltrain | [70141, 70142] |
-| San Antonio Caltrain | [70201, 70202] |
-| San Bruno Caltrain | [70051, 70052] |
-| San Carlos Caltrain | [70131, 70132] |
-| San Francisco Caltrain | [70011, 70012] |
-| San Jose Caltrain Station | [777402] |
-| San Jose Diridon Caltrain | [70261, 70262] |
-| San Martin Caltrain | [70311, 70312] |
-| San Mateo Caltrain | [70091, 70092] |
-| Santa Clara Caltrain | [70241, 70242] |
-| South San Francisco Caltrain | [70041, 70042] |
-| Stanford Caltrain | [2537740] |
-| Sunnyvale Caltrain | [70221, 70222] |
-| Tamien Caltrain | [70271, 70272] |
-| Tamien Caltrain Station | [777403] |
+| Station Name | Northbound ID | Southbound ID |
+| --- | --- | --- |
+| 22nd Street | 70021 | 70022 | 
+| Atherton | 70151 | 70152 | 
+| Bayshore | 70031 | 70032 | 
+| Belmont | 70121 | 70122 | 
+| Blossom Hill | 70291 | 70292 | 
+| Broadway | 70071 | 70072 | 
+| Burlingame | 70081 | 70082 | 
+| California Ave | 70191 | 70192 | 
+| Capitol | 70281 | 70282 | 
+| College Park | 70251 | 70252 | 
+| Gilroy | 70321 | 70322 | 
+| Hayward Park | 70101 | 70102 | 
+| Hillsdale | 70111 | 70112 | 
+| Lawrence | 70231 | 70232 | 
+| Menlo Park | 70161 | 70162 | 
+| Millbrae | 70061 | 70062 | 
+| Morgan Hill | 70301 | 70302 | 
+| Mountain View | 70211 | 70212 | 
+| Palo Alto | 70171 | 70172 | 
+| Redwood City | 70141 | 70142 | 
+| San Antonio | 70201 | 70202 | 
+| San Bruno | 70051 | 70052 | 
+| San Carlos | 70131 | 70132 | 
+| San Francisco | 70011 | 70012 | 
+| San Jose | n/a | 777402 |
+| San Jose Diridon | 70261 | 70262 | 
+| San Martin | 70311 | 70312 | 
+| San Mateo | 70091 | 70092 | 
+| Santa Clara | 70241 | 70242 | 
+| South San Francisco | 70041 | 70042 | 
+| Stanford | n/a | 2537740 |
+| Sunnyvale | 70221 | 70222 | 
+| Tamien | 777403 | 70272 | 
+
 
 
 
