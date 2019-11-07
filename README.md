@@ -7,7 +7,7 @@ The `Caltrain` module provides estimated times of departure (etd) for the select
 1. Clone the Caltrain module by running `git clone https://github.com/zzhenney/MMM-Caltrain`
 2. Run `npm install`
 3. Optain 511.org api_key. 511.org/api_key
-4. Optain station_id (see Station ID table below)
+4. Optain station_id (see [Station ID](#station-id) table below)
 5. Update your Magic Mirror config.js file to include your api_key and station_id:
 
 Example: User wants only southbound times at 22nd Street Station
