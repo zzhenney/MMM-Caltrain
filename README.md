@@ -67,13 +67,11 @@ Example: User wants only southbound times at 22nd Street Station
 | San Bruno | 70051 | 70052 | 
 | San Carlos | 70131 | 70132 | 
 | San Francisco | 70011 | 70012 | 
-| San Jose | n/a | 777402 |
 | San Jose Diridon | 70261 | 70262 | 
 | San Martin | 70311 | 70312 | 
 | San Mateo | 70091 | 70092 | 
 | Santa Clara | 70241 | 70242 | 
 | South San Francisco | 70041 | 70042 | 
-| Stanford | n/a | 2537740 |
 | Sunnyvale | 70221 | 70222 | 
 | Tamien | 777403 | 70272 | 
 
