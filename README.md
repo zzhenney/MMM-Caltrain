@@ -28,6 +28,17 @@ Example: User wants only southbound times at 22nd Street Station
   }
 }
 ```
+
+## Configuration Options
+
+| Option | Description |
+| --- | --- |
+| `northbound_id` | Station ID for North bound trains. Stop IDs can be obtained here: https://511.org/transit/agencies/stop-id |
+| `southbound_id` | Station ID for South bound trains |
+| `countdown` | Set this to true to display minutes until departure. Set to false to show the time of departure |
+| `api_key` | The API key can be obtained here: https://511.org/open-data/token |
+
+
 ## Station IDs
 
 | Station Name | Northbound ID | Southbound ID |
@@ -66,15 +77,3 @@ Example: User wants only southbound times at 22nd Street Station
 | Sunnyvale | 70221 | 70222 | 
 | Tamien | 777403 | 70272 | 
 
-
-
-
-
-## Configuration Options
-
-| Option | Description |
-| --- | --- |
-| `northbound_id` | Station ID for North bound trains. Stop IDs can be obtained here: https://511.org/transit/agencies/stop-id |
-| `southbound_id` | Station ID for South bound trains |
-| `countdown` | Set this to true to display minutes until departure. Set to false to show the time of departure |
-| `api_key` | The API key can be obtained here: https://511.org/open-data/token |
