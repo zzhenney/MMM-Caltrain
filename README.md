@@ -10,7 +10,7 @@ The `Caltrain` Magic Mirror module provides departure times or estimated times o
 1. Navigate to the modules folder in your Magic Mirror project
 1. Clone the Caltrain module by running `git clone https://github.com/zzhenney/MMM-Caltrain`
 2. Run `npm install`
-3. Optain 511.org api_key. 511.org/api_key
+3. Optain 511.org api_key by visiting https://511.org/api_key
 4. Optain station_id (see [Station ID](#station-ids) table below)
 5. Update your Magic Mirror config.js file to include your api_key and station_id:
 
