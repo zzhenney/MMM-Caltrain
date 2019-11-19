@@ -1,13 +1,9 @@
 # Module: Caltrain Departure Times
 The `Caltrain` Magic Mirror module provides departure times or estimated times of departure (etd) for the selected Caltrain station. Northbound and Southbound times can be displayed or hidden. Caltrain data is obtained via API calls to 511.org
 
-Departure Times
-
-![departure times preview](https://github.com/zzhenney/MMM-Caltrain/blob/master/departure_times.png)
-
-Estimated Time to Departure (etd)
-
-![etd preview](https://github.com/zzhenney/MMM-Caltrain/blob/master/etd.png)
+| Departure Times | Estimated Time to Departure (etd) |
+| --- | --- |
+| ![departure times preview](https://github.com/zzhenney/MMM-Caltrain/blob/master/departure_times.png) | ![etd preview](https://github.com/zzhenney/MMM-Caltrain/blob/master/etd.png) |
 
 
 ## Adding Caltrain Departure Times to Your Magic Mirror
