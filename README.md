@@ -58,9 +58,10 @@ Example: User wants both northbound and southbound estimated time to departure a
 
 | Option | Description |
 | --- | --- |
-| `northbound_id` | Station ID for North bound trains. Stop IDs can be obtained here: https://511.org/transit/agencies/stop-id |
+| `station_name` | Station name string. See [Station ID](#station-ids) table below for all station names
+| `northbound_id` | Station ID for North bound trains. Stop IDs can be obtained here: https://511.org/transit/agencies/stop-id or from the [Station ID](#station-ids) table below |
 | `southbound_id` | Station ID for South bound trains |
-| `countdown` | Set this to true to display minutes until departure. Set to false to show the time of departure |
+| `etd` | Set this to true to display minutes until departure. Set to false to show the time of departure |
 | `api_key` | The API key can be obtained here: https://511.org/open-data/token |
 
 
