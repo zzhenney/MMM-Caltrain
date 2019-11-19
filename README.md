@@ -1,5 +1,6 @@
 # Module: Caltrain Departure Times
-The `Caltrain` module provides estimated times of departure (etd) for the selected station. The module can display etd in minutes or 12 hour format. Northbound and Southbound times can be displayed or hidden.
+The `Caltrain` Magic Mirror module provides departure times or estimated times of departure (etd) for the selected Caltrain station. Northbound and Southbound times can be displayed or hidden. Caltrain data is obtained via API calls to 511.org
+
 
 
 ## Adding Caltrain Departure Times to Your Magic Mirror
@@ -10,7 +11,7 @@ The `Caltrain` module provides estimated times of departure (etd) for the select
 4. Optain station_id (see [Station ID](#station-ids) table below)
 5. Update your Magic Mirror config.js file to include your api_key and station_id:
 
-Example: User wants only southbound times at 22nd Street Station
+Example: User wants only southbound departure times at 22nd Street Station
 
 ```javascript
 {
@@ -23,11 +24,32 @@ Example: User wants only southbound times at 22nd Street Station
 
     ],
     api_key: "7y66r6ef-8687-4a65-8ca3-0a0d777107a2",
-    countdown: true
+    etd: false
     
   }
 }
 ```
+Example: User wants both northbound and southbound estimated time to departure at 22nd Street Station
+
+```javascript
+{
+  module: "MMM-Caltrain",
+  position: "top_right",
+  disabled: false,
+  config: {
+    station_id: [
+      northbound_id = "70021",
+      southbound_id = "70022"
+      
+
+    ],
+    api_key: "7y66r6ef-8687-4a65-8ca3-0a0d777107a2",
+    etd: true
+    
+  }
+}
+```
+
 
 ## Configuration Options
 
@@ -75,3 +97,9 @@ Example: User wants only southbound times at 22nd Street Station
 | Sunnyvale | 70221 | 70222 | 
 | Tamien | 777403 | 70272 | 
 
+
+## External Dependencies
+
+Moment.js - https://momentjs.com/
+
+node-fetch - https://www.npmjs.com/package/node-fetch
