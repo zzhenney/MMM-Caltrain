@@ -47,7 +47,9 @@ Module.register("MMM-Caltrain", {
 
     getDom: function() {
         if(!this.station_info) {
-            return document.createElement("div").innerHTML = "Loading Times"
+            let display = document.createElement("div");
+            display.innerHTML = "Loading Times"
+            return display
         }
 
         const wrapper = document.createElement("table");
